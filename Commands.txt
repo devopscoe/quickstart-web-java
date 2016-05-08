@@ -1,5 +1,0 @@
-//nexus deploy
-mvn -s settings.xml -DappName=Swe -DversionNumber=1.0.1 clean deploy
-//tomcat deploy
-mvn -s settings.xml -DappName=test -DversionNumber=1.0.1 -Pdev cargo:redeploy
-mvn -s settings.xml -DappName=test -DversionNumber=1.0.1 -Pdev cargo:undeploy
