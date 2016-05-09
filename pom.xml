@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.wipro.maven</groupId>
-  <artifactId>${appName}</artifactId>
+  <artifactId>JavaMavenproject</artifactId>
   <packaging>war</packaging>
-  <version>${versionNumber}</version>
-  <name>${appName} Maven Webapp</name>
+  <version>1.0.2</version>
+  <name>Java Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
         <deployer.path>/usr/local/sonatype-work/nexus/storage/releases/com/wipro/maven/${project.artifactId}/${project.version}/${project.artifactId}-${project.version}.war</deployer.path>
