@@ -4,7 +4,7 @@
   <groupId>com.wipro.maven</groupId>
   <artifactId>quickstarter-java</artifactId>
   <packaging>war</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>${appName} Sample Project</name>
   <url>http://maven.apache.org</url>
   <properties>
