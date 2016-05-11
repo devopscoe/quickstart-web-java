@@ -8,7 +8,7 @@
   <name>${appName} Sample Project</name>
   <url>http://maven.apache.org</url>
   <properties>
-        <deployer.path>${project.build.directory}/artifactToDeploy/${project.artifactId}-${project.version}.war</deployer.path>
+        <deployer.path>${project.build.directory}/artifactToDeploy/${appName}-${project.version}.war</deployer.path>
   </properties>
 	<distributionManagement>
         <!-- use the following if you're not using a snapshot version. -->
@@ -111,12 +111,14 @@
 						  <artifactItems>
 							<artifactItem>
 							  <groupId>${project.groupId}</groupId>
-							  <artifactId>${appName}</artifactId>
+							  <artifactId>${project.artifactId}</artifactId>
 							  <version>${project.version}</version>
 							  <type>${project.packaging}</type>
+							  <overWrite>true</overWrite>
+							  <outputDirectory>${project.build.directory}/artifactToDeploy</outputDirectory>
+							  <destFileName>${appName}-${project.version}.${project.packaging}</destFileName>
 							</artifactItem>
 						  </artifactItems>
-						  <outputDirectory>${project.build.directory}/artifactToDeploy</outputDirectory>
 						</configuration>
 					  </execution>
 					</executions>
