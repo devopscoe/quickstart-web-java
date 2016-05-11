@@ -67,7 +67,7 @@
             <!-- Updated the message based on the jira task assigned-->
             <!-- MYT-13 Change the home page welcome message -->
             <!--<h1>Congratulations!</h1>-->
-            <h1>Greetings!</h1>
+            <h1>Welcome Greetings!</h1>
 
             <h3>${greeter.greeting}</h3>
             <br>
